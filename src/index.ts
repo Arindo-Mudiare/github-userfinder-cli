@@ -1,1 +1,4 @@
-console.log("app working and confirmed!");
+import { GithubApiService } from './GithubApiService';
+
+let svc = new GithubApiService();
+svc.getUserInfo('Arindo-Mudiare');
