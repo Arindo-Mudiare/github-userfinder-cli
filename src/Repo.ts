@@ -4,15 +4,15 @@ export class Repo {
   url: string;
   size: number;
   forkCount: number;
-  repos: Repo[];
+  // repos: Repo[];
 
-  // constructor() {
-  //   this.name = name;
-  //   this.description = description;
-  //   this.url = url;
-  //   this.size = size;
-  //   this.forkCount = forkCount;
-  //   this.repos = repos;
+  constructor(repo: any) {
+    this.name = repo.name;
+    this.description = repo.description;
+    this.url = repo.html_url;
+    this.size = repo.size;
+    this.forkCount = repo.forks;
+    // this.repos = repos;
     
-  // }
+  }
 }
